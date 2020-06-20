@@ -55,6 +55,11 @@ body {
   bottom: -30px;
   left: 0px;
 }
+@media only screen and (max-device-width: 768px) {
+  .head-section {
+    font-size: 50px;
+  }
+}
 .landing-section {
   display: flex;
   min-height: calc(100vh - 100px);
@@ -74,12 +79,6 @@ body {
   background-color: var(--bright);
   left: 0;
   top: calc(50% - 2px);
-}
-top.mini-section-body {
-  line-height: 44px;
-  font-size: 30px;
-  font-weight: 900;
-  color: var(--section-light);
 }
 .mini-section-body {
   line-height: 40px;
@@ -165,7 +164,7 @@ top.mini-section-body {
 .org-logo {
   height: 94px;
   width: 94px;
-  margin: 0 38.5px;
+  margin: 10px 38.5px;
 }
 /*  */
 .portfolio-section {
