@@ -102,3 +102,24 @@ body {
   background-color: var(--secondary);
   padding-top: 100px;
 }
+.contact-info a {
+  color: var(--bright);
+  text-decoration: none;
+}
+.support-info {
+  color: #e5e5e5;
+  font-size: 18px;
+  position: relative;
+  padding-left: 70px;
+}
+.support-info:nth-of-type(1) {
+  padding-left: 90px;
+}
+.support-info::before {
+  content: attr(data-before);
+  color: var(--bright);
+  position: absolute;
+  font-size: 34px;
+  left: 16px;
+  top: 0;
+}
