@@ -123,3 +123,32 @@ body {
   left: 16px;
   top: 0;
 }
+.experience-card-section {
+  background-image: linear-gradient(
+    to bottom,
+    var(--secondary),
+    var(--secondary) 50%,
+    var(--main) 50%,
+    var(--main)
+  );
+}
+.experience-card {
+  height: 340px;
+  width: 290px;
+  padding: 135px 20px 0;
+  background-color: #323445;
+  color: var(--white);
+}
+.experience-card:hover {
+  background-color: #f7aa22;
+}
+.experience-card h1 {
+  font-weight: 900;
+}
+.experience-card-icon {
+  width: 85px;
+}
+.ex-card-image {
+  width: 44px;
+  height: 41px;
+}
