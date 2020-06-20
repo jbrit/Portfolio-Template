@@ -1,0 +1,46 @@
+:root {
+  --main: #414556;
+  --secondary: #242633;
+  --bright: #f7aa22;
+  --white: #ffffff;
+  --section-light: #c5c7d1;
+}
+#jbritz-blog {
+  padding-top: 44px;
+}
+.blog-articles-section {
+  background-color: var(--secondary);
+}
+.blog-img {
+  width: inherit;
+  object-fit: contain;
+}
+.blog-article-head {
+  font-weight: 900;
+  color: var(--bright);
+  font-size: 24px;
+}
+.blog-article-body {
+  color: var(--section-light);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.more-link {
+  font-weight: 900;
+  color: var(--bright);
+}
+.more-link:hover {
+  color: var(--bright);
+  opacity: 0.9;
+  text-decoration: none;
+}
+.load-more {
+  position: relative;
+}
+.load-more::after {
+  content: "›";
+  position: absolute;
+  transform: rotate(90deg);
+  right: -20px;
+}
