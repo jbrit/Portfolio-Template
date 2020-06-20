@@ -152,3 +152,17 @@ body {
   width: 44px;
   height: 41px;
 }
+/*  */
+.org-section {
+  padding-bottom: 100px;
+}
+.org-logo {
+  height: 94px;
+  width: 94px;
+  margin: 0 38.5px;
+}
+/*  */
+.portfolio-section {
+  padding-top: 118px;
+  background: var(--main);
+}
