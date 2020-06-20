@@ -222,3 +222,25 @@ a.bright-link::after {
   width: calc(100% - 34px);
   color: var(--section-light);
 }
+/*  */
+#contact-form {
+  padding: 30px 0;
+}
+#contact-form label {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 14px;
+  margin: 0;
+}
+#contact-form input {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #a4a6af;
+  color: white;
+}
+#contact-form input:focus,
+#contact-form input:active {
+  box-shadow: none;
+  border-color: white;
+}
