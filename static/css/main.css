@@ -1,0 +1,104 @@
+:root {
+  --main: #414556;
+  --secondary: #242633;
+  --bright: #f7aa22;
+  --white: #ffffff;
+  --section-light: #c5c7d1;
+}
+.text-bright {
+  color: var(--bright);
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: var(--main);
+}
+/* Nav Styles */
+.nav-item {
+  position: relative;
+  font-weight: 700;
+}
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: var(--bright);
+  left: calc(50% - 3.5px);
+}
+/* End Nav Styles */
+
+/* Others */
+#jbritz-page {
+  padding-top: 44px;
+  background: url(../images/person.png);
+  background-repeat: no-repeat;
+  background-position: 40%;
+}
+.head-section {
+  margin-top: 50%;
+  margin-bottom: 30px;
+  color: var(--white);
+  font-weight: 900;
+  font-size: 70px;
+  position: relative;
+  -webkit-text-stroke: 3px white;
+}
+.head-section::after {
+  content: "";
+  position: absolute;
+  width: 95px;
+  height: 14px;
+  background-color: var(--bright);
+  bottom: -30px;
+  left: 0px;
+}
+.landing-section {
+  display: flex;
+  min-height: calc(100vh - 100px);
+}
+.mini-section-head {
+  color: var(--bright);
+  position: relative;
+  padding-left: 45px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.mini-section-head::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 4px;
+  background-color: var(--bright);
+  left: 0;
+  top: calc(50% - 2px);
+}
+.mini-section-body {
+  line-height: 44px;
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--section-light);
+}
+.social-icon-set {
+  padding-top: 34px;
+}
+.social-icon:nth-of-type(1) {
+  margin-left: 0px;
+}
+.social-icon {
+  display: inline-block;
+  margin: 0 12.5px;
+}
+.social-icon:hover {
+  opacity: 0.9;
+}
+.social-icon-img {
+  height: 34px;
+  width: 34px;
+}
+.contact-section {
+  background-color: var(--secondary);
+  padding-top: 100px;
+}
