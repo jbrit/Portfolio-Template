@@ -47,11 +47,13 @@
   background-color: var(--bright);
 }
 .pd-item {
+  max-width: 100%;
   height: 200px;
   margin: 1.5rem auto;
 }
 .pd-item img {
   object-fit: contain;
+  max-width: 100%;
   height: 210px;
 }
 .bd-section {
