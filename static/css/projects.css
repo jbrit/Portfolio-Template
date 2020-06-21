@@ -30,6 +30,7 @@
   width: 120px;
 }
 .section-head-icon {
+  -o-object-fit: contain;
   object-fit: contain;
 }
 .white-link {
@@ -52,6 +53,7 @@
   margin: 1.5rem auto;
 }
 .pd-item img {
+  -o-object-fit: contain;
   object-fit: contain;
   max-width: 100%;
   height: 210px;
