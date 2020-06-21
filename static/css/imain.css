@@ -323,6 +323,7 @@ a.bright-link::after {
   content: "”";
   right: 0;
   bottom: 0;
+  line-height: 0;
 }
 /*  */
 #contact-form {
