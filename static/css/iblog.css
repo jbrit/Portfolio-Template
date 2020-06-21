@@ -1,8 +1,15 @@
+:root {
+  --main: #414556;
+  --secondary: #242633;
+  --bright: #f7aa22;
+  --white: #ffffff;
+  --section-light: #c5c7d1;
+}
 #jbritz-blog {
   padding-top: 44px;
 }
 .blog-articles-section {
-  background-color: #242633;
+  background-color: var(--secondary);
 }
 .blog-img {
   width: inherit;
@@ -11,21 +18,21 @@
 }
 .blog-article-head {
   font-weight: 900;
-  color: #f7aa22;
+  color: var(--bright);
   font-size: 24px;
 }
 .blog-article-body {
-  color: #c5c7d1;
+  color: var(--section-light);
   font-weight: 400;
   font-size: 20px;
 }
 
 .more-link {
   font-weight: 900;
-  color: #f7aa22;
+  color: var(--bright);
 }
 .more-link:hover {
-  color: #f7aa22;
+  color: var(--bright);
   opacity: 0.9;
   text-decoration: none;
 }

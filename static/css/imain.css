@@ -1,14 +1,21 @@
+:root {
+  --main: #414556;
+  --secondary: #242633;
+  --bright: #f7aa22;
+  --white: #ffffff;
+  --section-light: #c5c7d1;
+}
 .text-bright {
-  color: #f7aa22;
+  color: var(--bright);
 }
 .secondary-background {
-  background-color: #242633;
+  background-color: var(--secondary);
 }
 * {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background-color: #414556;
+  background-color: var(--main);
 }
 /* Nav Styles */
 .nav-item {
@@ -21,7 +28,7 @@ body {
   height: 7px;
   width: 7px;
   border-radius: 50%;
-  background-color: #f7aa22;
+  background-color: var(--bright);
   left: calc(50% - 3.5px);
 }
 /* End Nav Styles */
@@ -36,7 +43,7 @@ body {
 .head-section {
   margin-top: 50%;
   margin-bottom: 30px;
-  color: #ffffff;
+  color: var(--white);
   font-weight: 900;
   font-size: 70px;
   position: relative;
@@ -53,7 +60,7 @@ body {
   position: absolute;
   width: 95px;
   height: 14px;
-  background-color: #f7aa22;
+  background-color: var(--bright);
   bottom: -30px;
   left: 0px;
 }
@@ -69,7 +76,7 @@ body {
   min-height: calc(100vh - 100px);
 }
 .mini-section-head {
-  color: #f7aa22;
+  color: var(--bright);
   position: relative;
   padding-left: 45px;
   font-size: 20px;
@@ -80,7 +87,7 @@ body {
   position: absolute;
   width: 25px;
   height: 4px;
-  background-color: #f7aa22;
+  background-color: var(--bright);
   left: 0;
   top: calc(50% - 2px);
 }
@@ -88,7 +95,7 @@ body {
   line-height: 40px;
   font-size: 25px;
   font-weight: 900;
-  color: #c5c7d1;
+  color: var(--section-light);
 }
 .social-icon-set {
   padding-top: 34px;
@@ -108,11 +115,11 @@ body {
   width: 34px;
 }
 .contact-section {
-  background-color: #242633;
+  background-color: var(--secondary);
   padding-top: 100px;
 }
 .contact-info a {
-  color: #f7aa22;
+  color: var(--bright);
   text-decoration: none;
 }
 .support-info {
@@ -126,7 +133,7 @@ body {
 }
 .support-info::before {
   content: attr(data-before);
-  color: #f7aa22;
+  color: var(--bright);
   position: absolute;
   font-size: 34px;
   left: 16px;
@@ -139,24 +146,24 @@ body {
     linear,
     left top,
     left bottom,
-    from(#242633),
-    color-stop(50%, #242633),
-    color-stop(50%, #414556),
-    to(#414556)
+    from(var(--secondary)),
+    color-stop(50%, var(--secondary)),
+    color-stop(50%, var(--main)),
+    to(var(--main))
   );
   background-image: -o-linear-gradient(
     top,
-    #242633,
-    #242633 50%,
-    #414556 50%,
-    #414556
+    var(--secondary),
+    var(--secondary) 50%,
+    var(--main) 50%,
+    var(--main)
   );
   background-image: linear-gradient(
     to bottom,
-    #242633,
-    #242633 50%,
-    #414556 50%,
-    #414556
+    var(--secondary),
+    var(--secondary) 50%,
+    var(--main) 50%,
+    var(--main)
   );
 }
 .experience-card {
@@ -164,7 +171,7 @@ body {
   width: 290px;
   padding: 135px 20px 0;
   background-color: #323445;
-  color: #ffffff;
+  color: var(--white);
   position: relative;
   cursor: pointer;
 }
@@ -225,10 +232,10 @@ body {
 .portfolio-section {
   padding-top: 118px;
   padding-bottom: 78px;
-  background: #414556;
+  background: var(--main);
 }
 a.bright-link {
-  color: #f7aa22;
+  color: var(--bright);
   font-size: 18px;
   font-weight: 800;
   text-decoration: none;
@@ -237,7 +244,7 @@ a.bright-link {
 a.bright-link::after {
   content: "";
   position: absolute;
-  background-color: #f7aa22;
+  background-color: var(--bright);
   height: 4px;
   width: 25px;
   right: -40px;
@@ -252,7 +259,7 @@ a.bright-link::after {
 .blog-section {
   padding-top: 172px;
   padding-bottom: 100px;
-  background-color: #242633;
+  background-color: var(--secondary);
 }
 .blog-list-item {
   padding: 23.5px 0; /*47*/
@@ -268,7 +275,7 @@ a.bright-link::after {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #414556;
+  background-color: var(--main);
 }
 
 .blog-date {
@@ -278,7 +285,7 @@ a.bright-link::after {
 .blog-item {
   font-weight: 900;
   width: calc(100% - 34px);
-  color: #c5c7d1;
+  color: var(--section-light);
 }
 /*  */
 .comment-section {
@@ -295,23 +302,17 @@ a.bright-link::after {
   padding: 54px 0;
   font-weight: 700;
   font-size: 22px;
-  color: #c5c7d1;
+  color: var(--section-light);
 }
-.quote-main.comment-text::after {
-  color: #414556;
-}
+.quote-main.comment-text::after,
 .quote-main.comment-text::before {
-  color: #414556;
+  color: var(--main);
 }
-.comment-text::after {
-  position: absolute;
-  font-size: 75px;
-  color: #242633;
-}
+.comment-text::after,
 .comment-text::before {
   position: absolute;
   font-size: 75px;
-  color: #242633;
+  color: var(--secondary);
 }
 .comment-text::before {
   content: "“";
@@ -328,7 +329,7 @@ a.bright-link::after {
   padding: 30px 0;
 }
 #contact-form label {
-  color: #ffffff;
+  color: var(--white);
   font-weight: 900;
   font-size: 14px;
   margin: 0;
