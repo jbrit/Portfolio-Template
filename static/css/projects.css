@@ -46,6 +46,14 @@
 .pd-section {
   background-color: var(--bright);
 }
+.pd-item {
+  height: 200px;
+  margin: 1.5rem auto;
+}
+.pd-item img {
+  object-fit: contain;
+  height: 210px;
+}
 .bd-section {
   background-color: var(--secondary);
 }
