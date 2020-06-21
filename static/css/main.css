@@ -46,6 +46,9 @@ body {
   position: relative;
   -webkit-text-stroke: 3px white;
 }
+.head-section::selection {
+  color: white;
+}
 .head-section::after {
   content: "";
   position: absolute;
