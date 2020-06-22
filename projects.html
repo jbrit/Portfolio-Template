@@ -23,8 +23,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css" />
-    <link rel="stylesheet" href="/css/style.css" /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Projects | Portfolio</title>
     <link href="/static/css/main.css" rel="stylesheet" />
@@ -54,7 +53,14 @@
       </nav>
       <section class="container pb-5">
         <div class="d-flex">
-          <div class="">
+          <div
+            class=""
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-cubic"
+            data-aos-once="true"
+          >
             <div class="head-section">
               Projects
             </div>
@@ -213,18 +219,45 @@
                 Designer
               </div>
             </div>
-            <div class="img-section my-4">
+            <div
+              class="img-section my-4"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-cubic"
+              data-aos-once="true"
+            >
               <img class="boxed-img" src="./static/images/bd 1.png" alt="" />
             </div>
-            <div class="img-section my-4">
+            <div
+              class="img-section my-4"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-cubic"
+              data-aos-once="true"
+              data-aos-delay="100"
+            >
               <img class="boxed-img" src="./static/images/bd 2.png" alt="" />
             </div>
           </div>
           <div class="col-12 col-md-6 d-flex flex-column justify-content-end">
-            <div class="img-section my-4">
+            <div
+              class="img-section my-4"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-cubic"
+              data-aos-once="true"
+              data-aos-delay="200"
+            >
               <img class="boxed-img" src="./static/images/bd 3.png" alt="" />
             </div>
-            <div class="img-section my-4">
+            <div
+              class="img-section my-4"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-cubic"
+              data-aos-once="true"
+              data-aos-delay="300"
+            >
               <img class="boxed-img" src="./static/images/bd 4.png" alt="" />
             </div>
             <div class="py-5 text-center">
@@ -315,7 +348,13 @@
               Drop your message<br />
               and I will get back to you.
             </div>
-            <form id="contact-form">
+            <form
+              data-aos="flip-up"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-cubic"
+              data-aos-once="true"
+              id="contact-form"
+            >
               <div class="form-group">
                 <label for="contactName">Name</label>
                 <input
@@ -372,5 +411,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./static/js/main.js"></script>
   </body>
 </html>
