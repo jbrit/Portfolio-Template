@@ -9,6 +9,7 @@
 }
 body {
   background-color: #414556;
+  overflow-x: hidden;
 }
 /* Nav Styles */
 .nav-item {
